@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mark Lenington — Hand-Carved Logo Pumpkins</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-mode="night">
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="flame"></span>
+      <span class="name">Lenington</span>
+    </a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#book">Commission</a>
+      <button class="lamp" id="lamp" aria-label="Toggle daylight and candlelight">
+        <span class="bulb"></span>
+        <span class="lamp-label"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="top" data-screen-label="Hero">
+    <div class="hero-photo"></div>
+    <div class="hero-veil" id="veil"></div>
+    <div class="hero-torch" id="torch"></div>
+
+    <div class="hero-inner">
+      <span class="kicker">Hand-carved logos · Chicago, IL</span>
+      <h1 class="display">Welcome to my<br /><span class="amber">Halloween Hyper-Focus.</span></h1>
+      <p class="hero-sub">Custom restaurant and brand logos, carved by hand into pumpkins — then lit from within. A craft commission, equal parts signage and candle.</p>
+      <div class="hero-cta">
+        <button class="btn btn-ember" id="ignite">Strike a match</button>
+        <a class="btn btn-ghost" href="#work">See the work</a>
+      </div>
+    </div>
+
+    <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+  </header>
+
+  <!-- ===================== STATEMENT ===================== -->
+  <section class="statement wrap reveal" data-screen-label="Statement">
+    <div class="statement-grid">
+      <div>
+        <span class="kicker">The studio</span>
+        <h2 style="margin-top:18px;">Carved by<br />candlelight.</h2>
+      </div>
+      <div>
+        <p class="big">I take a restaurant's logo — every serif, star and flourish — and cut it by hand so it reads clean in daylight and <span class="em">burns bright</span> at night.</p>
+        <p>What starts as a printed stencil pinned to a carvable pumpkin becomes a back-lit sign you can set on a host stand, a bar top, or a sidewalk. No two are alike, and every one is built to glow.</p>
+        <div class="stat-row">
+          <div class="stat"><div class="n">7</div><div class="l">Logos carved</div></div>
+          <div class="stat"><div class="n">Chicago</div><div class="l">Bars &amp; restaurants</div></div>
+          <div class="stat"><div class="n">1</div><div class="l">Steady hand</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery wrap" id="work" data-screen-label="Gallery">
+    <div class="sec-head reveal">
+      <div>
+        <span class="kicker">Selected work</span>
+        <h2 class="section-title" style="margin-top:14px;">The commissions</h2>
+      </div>
+      <p>Hover to light · click to open</p>
+    </div>
+
+    <div class="pieces" id="pieces"><!-- injected by JS --></div>
+  </section>
+
+  <!-- ===================== FEATURE BAND: TERRACE 16 ===================== -->
+  <section class="feature" data-lightbox="terrace16" data-screen-label="Feature" aria-label="Terrace 16, on location">
+    <div class="feature-bg"></div>
+    <div class="feature-veil"></div>
+    <div class="feature-inner wrap reveal">
+      <div class="feature-text">
+        <span class="kicker">On location · Wrigley Building</span>
+        <h2 class="feature-title">Terrace 16</h2>
+        <p class="feature-copy">A hand-drawn Chicago skyline, carved window by window — then set on the rooftop so the glowing carve lines up with the real towers behind it.</p>
+        <span class="feature-cta">Open the shot ⤢</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="process wrap" id="process" data-screen-label="Process">
+    <div class="sec-head reveal">
+      <div>
+        <span class="kicker">How it's made</span>
+        <h2 class="section-title" style="margin-top:14px;">Stencil. Cut. Glow.</h2>
+      </div>
+    </div>
+    <div class="process-grid">
+      <div class="ba reveal" id="ba" aria-label="Before and after slider: stencil to lit">
+        <img class="ba-before" src="assets/images/otoole-stencil.jpg" alt="Printed stencil pinned to pumpkin" />
+        <img class="ba-after" src="assets/images/otoole-lit.jpg" alt="Carved pumpkin lit from within" />
+        <span class="ba-tag tag-l">Stencil</span>
+        <span class="ba-tag tag-r">Lit</span>
+        <div class="ba-handle" id="baHandle"><div class="ba-knob">↔</div></div>
+      </div>
+
+      <div class="steps reveal d1">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <h4>Print &amp; pin</h4>
+            <p>The logo is sized, printed, and pinned to a carvable foam pumpkin — fringe-cut so it hugs the curve without distorting a single letter.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <h4>Score &amp; carve</h4>
+            <p>Every line is poked through, then carved by hand. Some shapes are cut clean through; others are shaved thin so they glow softer than the rest.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <h4>Light it up</h4>
+            <p>A light drops inside and the logo wakes up — crisp by day, radiant by night. Drag the slider to watch a stencil become a sign.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact wrap" id="book" data-screen-label="Contact">
+    <div class="glowbg"></div>
+    <span class="kicker reveal" style="justify-content:center;">Commissions open</span>
+    <h2 class="reveal d1" style="margin-top:20px;">Put your logo<br /><span class="amber">in the window.</span></h2>
+    <p class="lede reveal d2">Restaurant, pub, brand or bar — send me your logo and I'll carve it. Seasonal commissions for Chicago and beyond.</p>
+    <div class="contact-rows reveal d2">
+      <a class="contact-chip" href="/cdn-cgi/l/email-protection#acc1decfcdc7c9cedec9cdc8eccbc1cdc5c082cfc3c1">✉ <span class="__cf_email__" data-cfemail="620f1001030907001007030622050f030b0e4c010d0f">[email&#160;protected]</span></a>
+      <a class="contact-chip" href="https://instagram.com/mrcakebread4" target="_blank" rel="noopener">◎ @mrcakebread4</a>
+      <span class="contact-chip">⌖ Chicago, IL</span>
+    </div>
+  </section>
+
+  <footer class="footer wrap" data-screen-label="Footer">
+    <span class="name">Mark Lenington</span>
+    <span class="meta">Hand-carved logo pumpkins · Chicago, IL · Commissions by request</span>
+  </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <div class="lb-inner">
+      <div class="lb-head">
+        <div>
+          <span class="client" id="lbClient"></span>
+          <h3 id="lbTitle"></h3>
+        </div>
+      </div>
+      <div class="lb-stages" id="lbStages"></div>
+      <p class="lb-note" id="lbNote"></p>
+    </div>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/app.js"></script>
+</body>
+</html>
